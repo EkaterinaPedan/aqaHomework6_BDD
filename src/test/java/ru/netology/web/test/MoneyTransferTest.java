@@ -50,6 +50,6 @@ public class MoneyTransferTest {
         var amount = DataHelper.getInvalidAmount(secondCardBalance);
         var transferPage = dashboardPage.selectCardToTransfer(firstCardInfo);
         transferPage.transfer(String.valueOf(amount), secondCardInfo);
-        transferPage.error("");
+        transferPage.error("Невозможно выполнить перевод, недостаточно средств.");
     }
 }
